@@ -1,12 +1,14 @@
 {
-    "compilerOptions": {
-        "lib": ["es2024"],
-        "module": "commonjs",
-        "rootDir": "src",
-        "outDir": "dist",
-        "sourceMap": true,
-        "strict": true,
-        "target": "es2024"
-    },
-    "include": ["src/**/*.ts"]
+  "compilerOptions": {
+    "lib": ["es2024"],
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2024",
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*.ts", "__tests__/**/*.ts", "jest.config.ts"]
 }
